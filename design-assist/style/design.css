@@ -1,0 +1,33 @@
+/* Start Hero */
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #ddf0ff, #fff);
+  padding-top: 160px;
+  padding-bottom: 0;
+}
+.hero .heading h2 {
+  position: relative;
+  max-width: 80%;
+  background-color: #a9c4d9;
+  padding: 15px 0 15px 100px;
+  margin: 0;
+  margin-left: auto;
+}
+.hero .container {
+  display: flex;
+  justify-content: flex-start;
+}
+.hero .container .content {
+  max-width: 500px;
+  height: 600px;
+  background-color: #c7dae8;
+  padding: 135px 15px 0;
+  margin-left: 115px;
+  margin-top: -90px;
+}
+@media screen and (max-width: 991px) {
+  .hero .container .content {
+    margin-left: 25px;
+  }
+}
+/* End Hero */

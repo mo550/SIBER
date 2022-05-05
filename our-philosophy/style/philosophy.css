@@ -1,0 +1,219 @@
+/* Start Hero */
+.hero .heading {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 55px;
+  text-transform: capitalize;
+}
+.hero-content {
+  width: 55%;
+  margin-top: 35px;
+}
+.hero-image {
+  width: 45%;
+}
+.hero-content h2 {
+  font-size: 25px;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+.hero-content .txt {
+  max-width: 450px;
+  margin: 50px 0;
+}
+@media screen and (max-width: 991px) {
+  .hero .container:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .hero-image img {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero-image img {
+    margin-left: -200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-image img {
+    margin-left: -50px;
+  }
+}
+/* End Hero */
+
+/* Start Innovation */
+.innovation {
+  background-image: linear-gradient(to top, #dcf0ff, #e3f3ff, #ebf7ff);
+  padding-bottom: 230px;
+}
+.innovation .upper-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.innovation .upper-section .left-side,
+.innovation .upper-section .right-side {
+  width: 48%;
+}
+.upper-section .left-side {
+  padding-right: 20px;
+}
+.upper-section .left-side h2 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.upper-section .left-side .txt,
+.upper-section .left-side .hint {
+  text-align: right;
+}
+.upper-section .left-side .hint {
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+.upper-section .right-side .img-box {
+  margin-top: 60px;
+}
+.upper-section .right-side img {
+  width: 100%;
+}
+.innovation .services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 150px;
+}
+.innovation .services .box {
+  max-width: 300px;
+}
+.innovation .services h3 {
+  font-size: 18px;
+}
+.innovation .services .txt {
+  margin: 10px 0 15px;
+}
+.innovation .services img {
+  width: 100px;
+}
+.innovation .services .image-box {
+  height: 150px;
+}
+@media screen and (max-width: 991px) {
+  .innovation .upper-section {
+    flex-direction: column-reverse;
+  }
+  .innovation .upper-section .left-side,
+  .innovation .upper-section .right-side {
+    width: 100%;
+  }
+  .upper-section .right-side .img-box {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  .upper-section .left-side {
+    padding-right: 0;
+  }
+}
+/* End Innovation */
+
+/* Start Strategies */
+.strategies {
+  position: relative;
+  background-color: #bfd7ea;
+  padding: 25px 0;
+}
+.strategies::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 50px; height: 100%;
+  background-color: #dcf0ff;
+}
+.strategies .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.strategies .heading {
+  position: absolute;
+  left: calc(50% + 10px);
+  top: -90px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.strategies .left-side,
+.strategies .right-side {
+  width: 49%;
+}
+.strategies .hint {
+  margin-bottom: 15px;
+}
+.strategies .left-side .img-box {
+  margin-top: -110px;
+}
+.strategies .left-side img {
+  width: 100%;
+  height: 400px;
+}
+@media screen and (max-width: 991px) {
+  .strategies .container {
+    flex-direction: column;
+  } 
+  .strategies .left-side,
+  .strategies .right-side {
+  width: 100%;
+  }
+  .strategies .right-side {
+    margin-top: 50px;
+  }
+  .strategies .left-side img {
+    height: auto;
+  }
+  .strategies .heading {
+    left: 20px;
+    top: -150px;
+  }
+}
+/* End Strategies */
+
+/* Start Our Values */
+.values .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  max-width: 80%;
+}
+.values .image-box {
+  width: 100px;
+  height: 80px;
+}
+.values .image-box img {
+  width: 100%;
+}
+.values .icon-box h5 {
+  margin: 25px 0 5px;
+}
+.values .icon-box p {
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 250px;
+}
+.values .values-content .txt {
+  font-size: 15px;
+  max-width: 100%;
+  margin-top: 25px;
+}
+@media screen and (max-width: 875px) {
+  .strategies::before {
+    width: 30px;
+  }
+  .values .container {
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+/* End Our Values */

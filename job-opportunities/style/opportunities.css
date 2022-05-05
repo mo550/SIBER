@@ -1,0 +1,10 @@
+/* Start Hero */
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #ddf0ff, #fff);
+  text-align: center;
+}
+.hero h1 {
+  margin-bottom: 50px;
+}
+/* End Hero */
